@@ -15,6 +15,7 @@ app.listen(3000, function() {
 });
 
 app.post('/', function(req, res) {
+    console.log(req.body.FNAME)
     console.log(req.body.email);
     res.end('Success!!');
 })
